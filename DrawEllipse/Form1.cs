@@ -22,9 +22,10 @@ namespace DrawEllipce
             Graphics g = e.Graphics;
             Rectangle rcPaint = new Rectangle(0, 0, ClientSize.Width, ClientSize.Height);
             Pen oRedPen = new Pen(Color.Red, 5);
+            Brush oYllowBrush = Brushes.Yellow;
             g.Clear(Color.Black);
             g.DrawEllipse(oRedPen, rcPaint);
-            g.FillEllipse(Brushes.Yellow, rcPaint);
+            g.FillEllipse(oYllowBrush, rcPaint);
         }
 
         private void Form1_Resize(object sender, EventArgs e)
